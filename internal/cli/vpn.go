@@ -31,7 +31,7 @@ const (
 func InitVpnCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "connect",
-		Short: "Helper to connect to a VPN through openconnect. \nNote that this is able to read `.env` files",
+		Short: "Helper to connect to a VPN through openconnect. \nNote that this is able to read `.env` files (by default in `/home/$USER/.vpn`)",
 		Run:   runConnectionFn(),
 	}
 
